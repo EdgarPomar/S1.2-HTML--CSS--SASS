@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  background-color: $navbar-bg;
+  .navbar-brand {
+    height: 40px;
+  }
+}
+
+header {
+  background-color: $hero-bg;
+}
+
+.card {
+  border: none;
+  .btn {
+    background-color: $primary-color;
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
